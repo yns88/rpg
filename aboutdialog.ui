@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutDialog</class>
+ <widget class="QDialog" name="AboutDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>241</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>270</y>
+     <width>71</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>221</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>About</string>
+    </attribute>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>211</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RPG Platform v1.0
+Author: Yunus Rahbar
+
+This program has been built to act as a
+platform for running a tabletop RPG
+online over a network connection
+between multiple people.
+
+It is rules-agnostic, and as such is
+designed to work with any tabletop
+game, so long as the players can
+enforce the rules themselves.</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Connecting</string>
+    </attribute>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>211</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>How to start a server:
+
+To run a server, select Start Server
+from the File menu. Then choose your
+username as the GM, and select a port
+for the server to listen on (default
+9876)
+
+How to connect to a server:
+
+To connect to a server, select Connect 
+to Server from the File menu. Then 
+choose your username and the IP 
+address and port of the server.</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Rolling Dice</string>
+    </attribute>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>211</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rolling Dice:
+
+To roll dice, drag the dice icon from the
+side bar into the program. If you drop
+the dice above the status bar, it will
+broadcast a dice roll to all users from 
+the server. Otherwise it will do a 
+private local roll.
+
+You can also do a custom roll by 
+entering '/roll xdy' in the chat menu.
+This will request the server to roll x
+number of y sided dice.</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
